@@ -12,7 +12,6 @@
                 'username' => $this->input->post('username'),
                 'fname' => $this->input->post('fname'),
                 'email' => $this->input->post('email'),
-                'username' => $this->input->post('username'),
                 'contact' => $this->input->post('contact'),
                 'nis' => $this->input->post('nis'),
                 'password' => sha1($this->input->post('password')),
@@ -27,6 +26,11 @@
         {
             $query = $this->db->get_where('users', $where)->num_rows();
             return $query;
+        }
+
+        public function cariUser($where)
+        {
+            return $this->db->get_where('users', $where)->row_array();
         }
     
     }

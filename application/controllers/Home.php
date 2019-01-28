@@ -7,11 +7,9 @@
         public function __construct() {
             parent::__construct();
             if ($this->session->userdata('status') != "logged in")
-        {
-            
-            redirect('Login');
-            
-        }
+            {
+                redirect('Login');
+            }
         }
     
         public function index()
@@ -20,16 +18,11 @@
             
         }
 
-        public function Register()
-        {
-            $this->load->view('register_view');
-            
-        }
+       
 
         public function Welcome()
         {
             $this->load->view('beranda');
-            
         }
     
     }

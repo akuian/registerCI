@@ -25,13 +25,15 @@
             $where = array('username' => $username, 'password' => $password);
     
             $cek = $this->Model_user->checkLogin($where);
+            $username = $this->Model_user->cariUser($where);
               if ($cek > 0) {
 
                 $data_session = array(
-                    'status' => 'logged in'
+                    'status' => 'logged in',
+                    'username' => $username['username'],
                 );
                 
-                $this->session->set_userdata( $data_session );
+                    $this->session->set_userdata( $data_session );
                 
                     redirect('Home/welcome');
              

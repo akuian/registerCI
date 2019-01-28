@@ -29,7 +29,7 @@
     </div>
     </header>
     <h1 text-align = "center" style="color:skyblue;text-align: left;font-size: 10.3mm;margin-top:170px;
-    margin-left: 400px; font-family: 'Playfair Display', serif;">Selamat Datang Iyyan
+    margin-left: 400px; font-family: 'Playfair Display', serif;">Selamat Datang <?= $_SESSION['username'] ?>
     <br>Berperilakulah Seperti Orang Abnormal
 
     <p style="font-size: 10px;margin-left: 400px;margin-top: 3px;">Jika ingin menjadi Biker sejati buktikan dulu kalau kau pernah gowes </p>
