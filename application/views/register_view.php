@@ -62,7 +62,7 @@
                                 <input type="password" class="form-control" name="cpassword" id="password" placeholder="Password">
                             </div>
                             <button class="btn btn-primary" name='reg'>REGISTER</button>
-                            <a href="<?php echo site_url('Home/Login') ?>" class="btn btn-link">Sign In</a>
+                            <a href="<?php echo site_url('Login') ?>" class="btn btn-link">Sign In</a>
 
                         <?php echo form_close() ?>
 
